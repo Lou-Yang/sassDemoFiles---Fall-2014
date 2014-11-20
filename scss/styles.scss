@@ -1,5 +1,6 @@
-$textColor: #0000FF;
-$headerFont: Helvetica, sans-serif;
+$textColor: #444;
+$headerFont: "Times New Roman", Georgia, Serif;
+$background-color: #ff7744;
 
 @import "reset";
 @import "type";
@@ -12,12 +13,11 @@ h2 {color:$textColor; font-family: $headerFont;}
 ul {color:$textColor; text-decoration: underline;}
 
 nav {
-    background-color:#FF0000;
-    ul {list-style: none;font-size: 2em;}
+    background-color:$background-color;
+    ul {list-style: circle;}
 }
 
-article {background-color: blue;
+article {background-color: $background-color;
 
-    ul {list-style: disc;font-size: 3em;}
-
+    ul a {list-style: circle;color: $textColor; }
 }
